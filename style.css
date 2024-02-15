@@ -52,28 +52,6 @@ body {
     font-size: 22.5px;
 }
 
-.stats {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
-    gap: 50px;
-    font-weight: 600;
-}
-
-.stats div p:nth-child(1) {
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.stats div p:nth-child(2) {
-    color: #a8a29e;
-    line-height: 1.5em;
-    font-size: 15px;
-}
-
 .cv {
     display: flex;
     align-items: center;
