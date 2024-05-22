@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 60px 60px 60px 60px;
+}
+
+.block {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.block.one {
+    grid-column: span 2;
+}
+
+.title {
+    background-color: #a3e635;
+    color: black;
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.abt {
+    margin: 80px 0px;
+}
+
+.abt img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 33px;
+}
+
+.about {
+    color: black;
+    font-size: 28px;
+    line-height: 1.4em;
+}
+
+.any {
+    color: #737373;
+}
+
+.block.two, .block.two, .block.three, .block.six {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.expo-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 2px solid #e5e5e5;
+    padding: 16px 0px;
+}
+
+.expo-data p:nth-child(1) {
+    color: black; 
+}
+
+.expo-data p:nth-child(2) {
+    color: #737373;
+}
+
+.pro-block a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 2px solid #e5e5e5;
+    padding: 16px 0px;
+}
+
+.pro-data p:nth-child(1) {
+    color: #737373;
+}
+
+.pro-data p:nth-child(2) {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pro-block i {
+    color: black;
+    font-size: 25px;
+}
+
+.block.four {
+    height: 504.2px;
+    grid-column: span 2;
+}
+
+.photo {
+    overflow: hidden;
+    position: relative;
+    grid-column: span 2;
+    border-radius: 15px;
+}
+
+.photo a::before {
+    background-color: rgb(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 1;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+.photo a:hover::before {
+    opacity: 1;
+}
+
+.photo img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.photo-block {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 30px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.title.agency {
+    background: rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+.block.five {
+    grid-column: span 2;
+}
+
+.block.six {
+    background-color: #a3e635;
+}
+
+.block.six .title {
+    color: black;
+    background-color: white;
+}
+
+.cont-div {
+    margin: 70px 0px;
+}
+
+.email {
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-size: 1.4em;
+}
+
+.cont-links {
+    border-top: 2px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 16px;
+}
+
+.cont-links a {
+    color: rgba(0, 0, 0, .5);
+    font-size: 15px;
+}
+
+.services {
+    margin-top: 50px;
+}
+
+.services div {
+    border-top: 2px solid #e5e5e5;
+    padding: 16px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.services div p {
+    font-size: 24px;
+}
+
+.services div span {
+    color: #a3a3a3;
+    align-self: flex-start;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.services div i {
+    margin-left: auto;
+    font-size: 30px;
+}
+
+@media(min-width: 1496px) {
+    .grid {
+        width: 1399px;
+        margin: auto;
+    }
+}
+
+@media(max-width: 1350px) {
+    .block.one, .block.two, .block.three, .photo {
+        grid-column: span 3;
+    }
+
+    .experince, .projects {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .block.five, .block.six {
+        grid-column: span 3;
+    }
+}
+
+@media(max-width: 650px) {
+    .photo {
+        height: 400px;
+    }
+}
+
+@media(max-width: 620px) {
+    .grid {
+        padding: 60px 40px;
+    }
+
+    .block, .photo-block {
+        padding: 25px;
+    }
+
+    .about {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 540px) {
+    .auto {
+        overflow: auto;
+    }
+
+    .experince {
+        width: 400px;
+    }
+
+    .services div p {
+        width: fit-content;
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+    .services div {
+        gap: 25px;
+    }
+
+    .services div span {
+        display: none;
+    }
+
+    .services div i {
+        font-size: 27px;
+    }
+
+    .abt img {
+        margin-bottom: 25px;
+    }
+
+    .cont-links {
+        gap: 10px;
+    }
+
+    .email {
+        margin-top: 3px;
+    }
+}
+
+@media(max-width: 450px) {
+    .about {
+        font-size: 20px;
+    }
+
+    .abt {
+        margin: 60px 0px;
+    }
+}
+
+@media(max-width: 360px) {
+    .grid {
+        padding: 60px 30px;
+    }
+}
