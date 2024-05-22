@@ -247,12 +247,6 @@ body {
     }
 }
 
-@media(max-width: 650px) {
-    .photo {
-        height: 400px;
-    }
-}
-
 @media(max-width: 620px) {
     .grid {
         padding: 60px 40px;
@@ -318,6 +312,16 @@ body {
 
     .grid {
         padding: 60px 30px;
+    }
+}
+
+@media(max-width: 420px) {
+    .photo {
+        height: 200px;
+    }
+
+    .title.agency {
+        display: none;
     }
 }
 
