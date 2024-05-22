@@ -315,6 +315,10 @@ body {
     .abt {
         margin: 60px 0px;
     }
+
+    .grid {
+        padding: 60px 30px;
+    }
 }
 
 @media(max-width: 360px) {
