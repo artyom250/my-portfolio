@@ -10,51 +10,62 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="language-selector">
+        <a href="index.html" class="logo">
+            <i class='bx bxs-bolt-circle'></i>
+            <span>artyom</span>
+        </a>
+        <select onchange="setLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="tk">Türkmençe</option>
+        </select>
+    </div>
     <div class="grid">
         <div class="block one">
-            <p class="title">About</p>
+            <p class="title" data-translate="about">About</p>
             <div class="abt">
                 <img src="./images/Avatar.jpg" alt="about">
-                <p class="about">I'm a developer based in Ashgabat who provides services in the area of development and automation of business processes, which will increase productivity and income for your enterprise.</p>
+                <p class="about" data-translate="about_text">I'm a developer based in Ashgabat who provides services in the area of development and automation of business processes, which will increase productivity and income for your enterprise.</p>
             </div>
-            <p class="any">Open for any collaborations and offers!</p>
+            <p class="any" data-translate="any_collaborations">Open for any collaborations and offers!</p>
         </div>
         <div class="block two">
-            <p class="title">Experience</p>
+            <p class="title" data-translate="experience">Experience</p>
             <div class="auto">
                 <div class="experince">
                     <div class="expo-block">
                         <div class="expo-data">
-                            <p>Developer</p>
-                            <p>Freelance</p>
+                            <p data-translate="developer">Developer</p>
+                            <p data-translate="freelance">Freelance</p>
                         </div>
                         <p style="color: #737373;">2024 - Now</p>
                     </div>
                     <div class="expo-block">
                         <div class="expo-data">
-                            <p>Qualification courses</p>
-                            <p>IBM</p>
+                            <p data-translate="qualification_courses">Qualification courses</p>
+                            <p data-translate="ibm">IBM</p>
                         </div>
                         <p style="color: #737373;">2023 - 2024</p>
                     </div>
                     <div class="expo-block">
                         <div class="expo-data">
-                            <p>Intern</p>
-                            <p>Breakthrough Academy</p>
+                            <p data-translate="intern">Intern</p>
+                            <p data-translate="breakthrough_academy">Breakthrough Academy</p>
                         </div>
                         <p style="color: #737373;">2023 - 2024</p>
                     </div>
                     <div class="expo-block">
                         <div class="expo-data">
-                            <p>Bachelor</p>
-                            <p>UNITEN</p>
+                            <p data-translate="bachelor">Bachelor</p>
+                            <p data-translate="uniten">UNITEN</p>
                         </div>
                         <p style="color: #737373;">2021 - 2024</p>
                     </div>
                     <div class="expo-block">
                         <div class="expo-data">
-                            <p>Foundation</p>
-                            <p>UNITEN</p>
+                            <p data-translate="foundation">Foundation</p>
+                            <p data-translate="uniten">UNITEN</p>
                         </div>
                         <p style="color: #737373;">2019 - 2020</p>
                     </div>
@@ -62,13 +73,13 @@
             </div>
         </div>
         <div class="block three">
-            <p class="title">Recent works</p>
+            <p class="title" data-translate="recent_works">Recent works</p>
             <div class="projects">
                 <div class="pro-block">
                     <a href="https://sales-project-23bcc.web.app/" target="_blank">
                         <div class="pro-data">
-                            <p>Web Development</p>
-                            <p>Sales Project</p>
+                            <p data-translate="web_development">Web Development</p>
+                            <p data-translate="sales_project">Sales Project</p>
                         </div>
                         <i class='bx bx-right-arrow-circle'></i>
                     </a>
@@ -76,8 +87,8 @@
                 <div class="pro-block">
                     <a href="https://real-estate-28583.web.app/" target="_blank">
                         <div class="pro-data">
-                            <p>Web Development</p>
-                            <p>Real Estate</p>
+                            <p data-translate="web_development">Web Development</p>
+                            <p data-translate="real_estate">Real Estate</p>
                         </div>
                         <i class='bx bx-right-arrow-circle'></i>
                     </a>
@@ -85,8 +96,8 @@
                 <div class="pro-block">
                     <a href="https://design-agency-51b51.web.app/" target="_blank">
                         <div class="pro-data">
-                            <p>Web Development</p>
-                            <p>Design Agency</p>
+                            <p data-translate="web_development">Web Development</p>
+                            <p data-translate="design_agency">Design Agency</p>
                         </div>
                         <i class='bx bx-right-arrow-circle'></i>
                     </a>
@@ -94,8 +105,8 @@
                 <div class="pro-block">
                     <a href="index.html" target="_blank">
                         <div class="pro-data">
-                            <p>Web Development</p>
-                            <p>Portfolio</p>
+                            <p data-translate="web_development">Web Development</p>
+                            <p data-translate="portfolio">Portfolio</p>
                         </div>
                         <i class='bx bx-right-arrow-circle'></i>
                     </a>
@@ -107,44 +118,46 @@
                 <img src="./images/1.png" class="img1" alt="photo">
                 <img src="./images/2.png" class="img2" alt="photo">
                 <div class="photo-block">
-                    <p class="title feat">Featued ptoject</p>
-                    <p class="title agency">Design agency</p>
+                    <p class="title feat" data-translate="featured_project">Featured project</p>
+                    <p class="title agency" data-translate="design_agency">Design agency</p>
                 </div>
             </a>
         </div>
         <div class="block five">
-            <p class="title">Services</p>
+            <p class="title" data-translate="services">Services</p>
             <div class="services">
                 <div>
-                    <p>Creating websites</p>
+                    <p data-translate="creating_websites">Creating websites</p>
                     <span>(01)</span>
-                    <i class='bx bxs-bolt-circle bx-tada' ></i>
+                    <i class='bx bxs-bolt-circle bx-tada'></i>
                 </div>
                 <div>
-                    <p>Application development</p>
+                    <p data-translate="application_development">Application development</p>
                     <span>(02)</span>
-                    <i class='bx bx-cog bx-spin' ></i>
+                    <i class='bx bx-cog bx-spin'></i>
                 </div>
                 <div>
-                    <p>Logo design</p>
+                    <p data-translate="logo_design">Logo design</p>
                     <span>(03)</span>
-                    <i class='bx bxs-palette bx-flashing' ></i>
+                    <i class='bx bxs-palette bx-flashing'></i>
                 </div>
             </div>
         </div>
         <div class="block six">
-            <p class="title cont">Contact Us</p>
+            <p class="title cont" data-translate="contact_us">Contact Us</p>
             <div class="cont-div">
-                <p style="color: rgba(0, 0, 0, .5); ;line-height: 1.4em;">Let’s make something special together!</p>
-                <a href="mailto:artyom.agadzhanyan250@gmail.com" class="email">artyom.agadzhanyan250@gmail.com</a>
+                <p style="color: rgba(0, 0, 0, .5); ;line-height: 1.4em;" data-translate="contact_text">Let’s make something special together!</p>
+                <a href="mailto:artyom.agadzhanyan250@gmail.com" class="email" data-translate="email">artyom.agadzhanyan250@gmail.com</a>
             </div>
             <div class="cont-links">
-                <a href="https://s.imoim.net/5nK6d" target="_blank">IMO</a>
-                <a href="https://wa.me/+60147149247" target="_blank">WhatsApp</a>
-                <a href="https://t.me/tom_shlyahtin166" target="_blank">Telegram</a>
-                <a href="./docs/artyom_agadzhanyan.pdf" download>CV</a>
+                <a href="https://s.imoim.net/5nK6d" target="_blank" data-translate="imo">IMO</a>
+                <a href="https://wa.me/+60147149247" target="_blank" data-translate="whatsapp">WhatsApp</a>
+                <a href="https://t.me/tom_shlyahtin166" target="_blank" data-translate="telegram">Telegram</a>
+                <a href="./docs/artyom_agadzhanyan.pdf" download data-translate="cv">CV</a>
             </div>
         </div>
     </div>
+    <br><br>
+    <script src="script.js"></script>
 </body>
 </html>
