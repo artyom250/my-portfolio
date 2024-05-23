@@ -31,9 +31,10 @@ body {
 }
 
 .title {
-    background-color: #a3e635;
-    color: black;
+    background-color: #FF3131;
+    color: white;
     width: fit-content;
+    font-weight: 600;
     font-size: 15px;
     padding: 5px 15px;
     border-radius: 20px;
@@ -142,6 +143,10 @@ body {
     transition: 0.3s;
 }
 
+.img2 {
+    display: none;
+}
+
 .photo-block {
     position: absolute;
     display: flex;
@@ -162,16 +167,21 @@ body {
 }
 
 .block.six {
-    background-color: #a3e635;
+    background-color: #FF914D;
 }
 
-.block.six .title {
+.title.feat {
     color: black;
     background-color: white;
 }
 
 .cont-div {
     margin: 70px 0px;
+}
+
+.title.cont {
+    background-color: white;
+    color: black;
 }
 
 .email {
@@ -222,13 +232,6 @@ body {
 .services div i {
     margin-left: auto;
     font-size: 30px;
-}
-
-@media(min-width: 1496px) {
-    .grid {
-        width: 1399px;
-        margin: auto;
-    }
 }
 
 @media(max-width: 1350px) {
@@ -301,6 +304,20 @@ body {
     }
 }
 
+@media(max-width: 500px) {
+    .img2 {
+        display: block;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .title.agency {
+        display: none;
+    }
+}
+
 @media(max-width: 450px) {
     .about {
         font-size: 20px;
@@ -312,16 +329,6 @@ body {
 
     .grid {
         padding: 60px 30px;
-    }
-}
-
-@media(max-width: 420px) {
-    .photo {
-        height: 200px;
-    }
-
-    .title.agency {
-        display: none;
     }
 }
 
